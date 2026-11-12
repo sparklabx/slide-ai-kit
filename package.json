@@ -1,0 +1,16 @@
+{
+  "name": "slide-ai-kit",
+  "version": "0.1.0",
+  "description": "Themed PowerPoint decks from a declarative spec, built for AI agents: fixed-grid templates, a content validator and a render-to-PDF self-check.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": { ".": "./src/index.mjs", "./themes/*": "./themes/*/theme.mjs" },
+  "bin": { "slide-ai": "./src/cli.mjs" },
+  "scripts": { "test": "node --test", "demo": "node examples/demo.mjs" },
+  "files": ["src", "themes", "skills", "examples", "README.md", "LICENSE"],
+  "dependencies": { "pptxgenjs": "^3.12.0" },
+  "engines": { "node": ">=18" },
+  "keywords": ["pptx", "powerpoint", "slides", "ai-agent", "claude", "pptxgenjs"],
+  "repository": { "type": "git", "url": "https://github.com/sparklabx/slide-ai-kit.git" },
+  "license": "Apache-2.0"
+}
